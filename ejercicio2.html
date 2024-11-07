@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJ.2</title>
+</head>
+<body>
+    <script>
+
+    let operacion = prompt("Elige una operación: sumar, restar, multiplicar, dividir");
+    let a = parseFloat(prompt("Digite el valor que tendrá a: "));
+    let b = parseFloat(prompt("Digite el valor que tendrá b: "));
+
+
+    function sumar(a, b) {
+    return a + b;
+}
+
+    function restar(a, b) {
+    return a - b;
+}
+
+    function multiplicar(a, b) {
+    return a * b;
+}
+
+    function dividir(a, b) {
+    return a / b;
+}
+
+function calculadora(a, b, operacion) {
+    switch (operacion) {
+        case "sumar":
+            return sumar(a, b);
+        case "restar":
+            return restar(a, b);
+        case "multiplicar":
+            return multiplicar(a, b);
+        case "dividir":
+            return dividir(a, b);
+        default:
+            return "Operación desconocida";
+    }
+}
+
+let resultado = calculadora(a, b, operacion);
+alert("El resultado de " + operacion + " " + a + " y " + b + " es: " + resultado);
+
+    </script>
+    
+</body>
+</html>

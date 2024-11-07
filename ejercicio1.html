@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJ.1</title>
+</head>
+<body>
+    <script>
+      let operacion = prompt("Elige una operación: sumar, restar, multiplicar, dividir");
+
+     switch (operacion) {
+    case "sumar":
+        let a = parseFloat(prompt("Digite el valor que tendrá a: "));
+        let b = parseFloat(prompt("Digite el valor que tendrá b: "));
+        function sumar(a, b) {
+            return a + b;
+        }
+        alert("a = " + a + " y b = " + b);
+        alert("a + b es igual a: " + sumar(a, b));
+        break;
+
+    case "restar":
+        let c = parseFloat(prompt("Digite el valor que tendrá c: "));
+        let d = parseFloat(prompt("Digite el valor que tendrá d: "));
+        function restar(c, d) {
+            return c - d;
+        }
+        alert("c = " + c + " y d = " + d);
+        alert("c - d es igual a: " + restar(c, d));
+        break;
+
+    case "multiplicar":
+        let e = parseFloat(prompt("Digite el valor que tendrá e: "));
+        let f = parseFloat(prompt("Digite el valor que tendrá f: "));
+        function multiplicar(e, f) {
+            return e * f;
+        }
+        alert("e = " + e + " y f = " + f);
+        alert("e * f es igual a: " + multiplicar(e, f));
+        break;
+
+    case "dividir":
+        let g = parseFloat(prompt("Digite el valor que tendrá g: "));
+        let h = parseFloat(prompt("Digite el valor que tendrá h: "));
+        function dividir(g, h) {
+            return g / h;
+        }
+        alert("g = " + g + " y h = " + h);
+        alert("g / h es igual a: " + dividir(g, h));
+        break;
+    }
+
+    </script>
+</body>
+</html>
